@@ -1,0 +1,21 @@
+--follow-up question
+--session-1=>code 2
+--https://datalemur.com/questions/repeated-payments
+
+WITH payments AS (
+    SELECT
+        merchant_id,
+        credit_card_id,
+        amount,
+        transaction_timestamp,
+        LAG(transaction_timestamp) OVER (
+            PARTITION BY merchant_id, credit_card_id, amount
+            ORDER BY transaction_timestamp
+        ) AS prev_time
+    FROM transactions
+)
+
+SELECT
+    COUNT(*) AS payment_count
+FROM payments
+WHERE EXTRACT(EPOCH FROM (transaction_timestamp - prev_time)) / 60 <= 10;
