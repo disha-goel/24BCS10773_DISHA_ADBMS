@@ -1,3 +1,7 @@
+--Experiment-4.6=>
+--https://www.codechef.com/learn/course/sql-intermediate/SQ00BS01/problems/ASQL01C
+
+
 --We have a student table that also stores the Course_id of a student's favorite course. Our task has two parts related to using a SELF JOIN:
 --Find pairs of students that belong to the same department.
 --Identify students who have chosen the same Course_id as their favorite. Display the St_id, St_Name, and Course_id and order it in increasing Course_id.
