@@ -1,6 +1,6 @@
 --follow-up question
 --session-3=>code 1
---https://datalemur.com/questions/time-spent-snapsatement
+--https://datalemur.com/questions/time-spent-snaps
 
 SELECT
     ab.age_bucket,
