@@ -1,3 +1,5 @@
+--EXPERIMENT=>6=>EXP-6.2
+--CODE 1
 --VIEWS
 
 CREATE TABLE employees (
