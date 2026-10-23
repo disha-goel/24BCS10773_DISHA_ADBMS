@@ -1,5 +1,5 @@
 --follow-up question
---session-20=>code 1
+--session-20=>code 2
 --https://www.codechef.com/learn/course/sql-intermediate/SQ00BS01/problems/GSQ65?tab=statement
 
 
